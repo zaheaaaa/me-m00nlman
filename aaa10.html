@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مون لتل مان</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20211009/pngtree-matrix-code-abstract-programming-background-image_908363.png'); /* رابط لصورة الشلالات */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, p {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .option1 {
+            background-color: #ff5722;
+        }
+        .option2 {
+            background-color: #4caf50;
+        }
+        .option3 {
+            background-color: #2196f3;
+        }
+        .option4 {
+            background-color: #9c27b0;
+        }
+        .option5 {
+            background-color: #ffeb3b;
+        }
+        .option6 {
+            background-color: #e91e63;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>أهلاً بك في موقع مون لتل مان</h1>
+        <p>أنا شخص فاضي أحب أبرمج وألعب طيب بس.. اي بس</p>
+        
+        <div id="options">
+            <p>اختر خياراً:</p>
+            <button class="option1" onclick="showMessage('Eagle')">ثغرة متخطية Eagle</button>
+            <button class="option2" onclick="showMessage('FiveGuard')">ثغرة متخطية FiveGuard</button>
+            <button class="option3" onclick="showMessage('Screen Exploit')">ثغرة شاشة</button>
+            <button class="option4" onclick="showMessage('Bypass Protection')">طريقة تخطي أي حماية</button>
+            <button class="option5" onclick="showMessage('Spoof')">سبوف يفك Eagle</button>
+            <button class="option6" onclick="showMessage('DDoS & Free Executor')">ددوس + إكسكيوتر مجاني</button>
+        </div>
+        
+        <div id="message" class="hidden">
+            <h2>go f k yr sf</h2>
+        </div>
+    </div>
+
+    <script>
+        function showMessage(option) {
+            document.getElementById('options').classList.add('hidden');
+            document.getElementById('message').classList.remove('hidden');
+            console.log('تم اختيار: ' + option);
+        }
+    </script>
+</body>
+</html>
